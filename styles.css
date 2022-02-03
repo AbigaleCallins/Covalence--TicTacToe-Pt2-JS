@@ -1,0 +1,48 @@
+#board {
+    padding-top: 3em;
+    text-align: center;
+}
+
+.row>div {
+    height: 100px;
+    width: 100px;
+    float: left;
+}
+
+.row {
+    margin: 0 auto;
+    clear: both;
+    width: 302px;
+    cursor: pointer;
+}
+
+.top {
+    border-bottom: 1px solid black;
+}
+
+.bottom {
+    border-top: 1px solid black;
+}
+
+.left {
+    border-right: 1px solid black;
+}
+
+.right {
+    border-left: 1px solid black;
+}
+
+/* CENTERING RESET BOTTON**/
+#resetGame {
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 1px solid dodgerblue;
+    margin: auto;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: dodgerblue;
+    color: floralwhite;
+    font-size: 20px;
+    cursor: pointer;
+}
