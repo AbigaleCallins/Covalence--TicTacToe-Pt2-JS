@@ -1,7 +1,6 @@
+// Inheritance class from doc.html
 let cells = document.querySelectorAll(".row > div");
-// const x_class = "X";
-// const changeTurn
-// const o_class = "O";
+
 let turnCounter = 0;
 
 const wins = [
@@ -24,6 +23,7 @@ for (let i = 0; i < cells.length; i++) {
 }
 
 function cellClicked(event) {
+ 
   if (event.target.textContent == "") {
     if (turnCounter % 2 == 0) {
       event.target.textContent = "X";
@@ -52,8 +52,10 @@ function checkWin() {
       alert("X IS WINNER");
     } else if (oCount == 3) {
       alert("O IS WINNER");
-    } else if(turnCounter == 9) {
-      
+    } else if ((turnCounter <= 1), (turnCounter == 9)) {
+     alert("D")
+     break; //Loop continue w/o
     }
   }
 }
+
