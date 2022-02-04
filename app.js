@@ -16,7 +16,7 @@ const wins = [
 
 //the aray that selects individual cell
 
-// varable
+
 
 for (let i = 0; i < cells.length; i++) {
   cells[i].addEventListener("click", cellClicked);
@@ -54,7 +54,7 @@ function checkWin() {
       alert("O IS WINNER");
     } else if ((turnCounter <= 1), (turnCounter == 9)) {
      alert("D")
-     break; //Loop continue w/o
+     break; //Loop continues w/o
     }
   }
 }
