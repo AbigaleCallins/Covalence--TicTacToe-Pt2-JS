@@ -9,25 +9,30 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
 
+  
   <body>
     <div id="board">
       <h1>Tic Tac Toe</h1>
+      <br /><br />
+      <div>
+        <button id="resetGame" onclick="newGame(cells)">RESET</button>
+      </div>
+      <br /><br />
       <div class="row">
-        <div class="top left"></div>
-        <div class="top mid"></div>
-        <div class="top right"></div>
+        <div class="top left" class="X" class="O"></div>
+        <div class="top mid" class="X" class="O"></div>
+        <div class="top right" class="X" class="O"></div>
       </div>
       <div class="row">
-        <div class="center left"></div>
-        <div class="center mid"></div>
-        <div class="center right"></div>
+        <div class="center left" class="X" class="O"></div>
+        <div class="center mid" class="X" class="O"></div>
+        <div class="center right" class="X" class="O"></div>
       </div>
       <div class="row">
-        <div class="bottom left"></div>
-        <div class="bottom mid"></div>
-        <div class="bottom right"></div>
+        <div class="bottom left" class="X" class="O"></div>
+        <div class="bottom mid" class="X" class="O"></div>
+        <div class="bottom right" class="X" class="O"></div>
       </div>
-      <div><button id="resetGame" onclick="myfunc_2">RESET</button></div>
     </div>
   </body>
 </html>

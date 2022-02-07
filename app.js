@@ -1,8 +1,8 @@
 // Inheritance class from doc.html
 let cells = document.querySelectorAll(".row > div");
-
+// let btn = document.querySelectorAll("#resetGame");
 let turnCounter = 0;
-
+git 
 const wins = [
   [cells[1], cells[2], cells[0]],
   [cells[3], cells[4], cells[5]],
@@ -11,19 +11,16 @@ const wins = [
   [cells[1], cells[4], cells[7]],
   [cells[2], cells[5], cells[8]],
   [cells[6], cells[4], cells[2]],
-  [cells[0], cells[4], cells[8]]
+  [cells[0], cells[4], cells[8]],
 ];
 
 //the aray that selects individual cell
-
-
-
 for (let i = 0; i < cells.length; i++) {
   cells[i].addEventListener("click", cellClicked);
 }
 
+
 function cellClicked(event) {
- 
   if (event.target.textContent == "") {
     if (turnCounter % 2 == 0) {
       event.target.textContent = "X";
@@ -45,17 +42,29 @@ function checkWin() {
         xCount++;
       } else if (wins[i][j].textContent == "O") {
         oCount++;
+       
       }
     }
 
-    if (xCount == 3) {
+    if (xCount > 2) {
       alert("X IS WINNER");
-    } else if (oCount == 3) {
+    } else if (oCount > 2) {
       alert("O IS WINNER");
-    } else if ((turnCounter <= 1), (turnCounter == 9)) {
-     alert("D")
-     break; //Loop continues w/o
+    }
+    if ((xCount < 3, oCount < 3, turnCounter == 9)) {
+      alert("Draw");
+      break; //Loop continues w/o
     }
   }
 }
 
+
+
+// function newGame() {
+//   // if ("click" = true)
+//   for (let i = 0; i < cells.length; i++) {
+//     cells[i].textContent.length = '';
+   
+//   }
+  
+// }

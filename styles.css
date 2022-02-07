@@ -1,35 +1,53 @@
-#board {
-    padding-top: 3em;
+
+body {
+    color: floralwhite;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(../img/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
     text-align: center;
 }
 
-.row>div {
+#board {
+    padding-top: 3em;
+    text-align: center;
+    
+}
+
+.row > div {
+    float: left;
     height: 100px;
     width: 100px;
-    float: left;
+    cursor: pointer;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 90px;
 }
 
 .row {
-    margin: 0 auto;
+    margin: auto;
     clear: both;
-    width: 302px;
-    cursor: pointer;
+    width: 306px;
+
+    color: floralwhite;
+    text-align: center;
 }
 
 .top {
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid floralwhite;
 }
 
 .bottom {
-    border-top: 1px solid black;
+    border-top: 3px solid floralwhite;
 }
 
 .left {
-    border-right: 1px solid black;
+    border-right: 3px solid floralwhite;
 }
 
 .right {
-    border-left: 1px solid black;
+    border-left: 3px solid floralwhite;
 }
 
 /* CENTERING RESET BOTTON**/
@@ -37,12 +55,13 @@
     box-sizing: border-box;
     width: 95px;
     height: 40px;
-    border: 1px solid dodgerblue;
+    border: 1px solid rgb(146, 36, 82);
     margin: auto;
     border-radius: 4px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: dodgerblue;
+    background-color: rgb(146, 36, 82);
     color: floralwhite;
     font-size: 20px;
     cursor: pointer;
 }
+
