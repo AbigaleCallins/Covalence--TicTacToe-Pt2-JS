@@ -1,0 +1,73 @@
+body {
+    background-image: url(img/background.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(22, 22, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#refresh {
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: transparent;
+    color: rgb(54, 173, 173);
+    font-size: larger;
+    cursor: pointer;
+}
+
+#board {
+  padding-top: 3em;
+  text-align: center;
+
+}
+.row > div {
+  float: left;
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-size: 100px;
+}
+
+.row {
+  margin: auto;
+  clear: both;
+  width: 306px;
+
+  color: rgb(90, 189, 156);
+  text-align: center;
+}
+
+.top {
+  border-bottom: 3px solid rgb(90, 189, 156);
+}
+
+.bottom {
+  border-top: 3px solid rgb(90, 189, 156);
+}
+
+.left {
+  border-right: 3px solid rgb(90, 189, 156);
+}
+
+.right {
+  border-left: 3px solid rgb(90, 189, 156);
+}
+
+/* CENTERING RESET BOTTON*
+#resetGame {
+    box-sizing: border-box;
+    width: 95px;
+    height: 40px;
+    border: 1px solid rgb(146, 36, 82);
+    margin: auto;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(146, 36, 82);
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+} */
